@@ -136,7 +136,7 @@ console.log(maior(10, 7));
 
 
 ➤ Desafio: modifique para comparar três números.
-*/ 
+
 
 function maior(a, b ,c) {
     if (a > b && a > c) return a 
@@ -145,6 +145,52 @@ function maior(a, b ,c) {
 }
 
 document.write(maior(10, 11, 9))
+
+------------------------------------------------------------------------------
+
+🟡 Nível 2 – Praticando lógica
+
+Agora você vai juntar condições e funções de maneira mais criativa.
+
+Conversor de temperatura
+
+function celsiusParaFahrenheit(c) {
+  return (c * 9/5) + 32;
+}
+console.log(celsiusParaFahrenheit(30));
+
+
+➤ Desafio: crie também fahrenheitParaCelsius.
+
+function FahrenheitParaCelsius(f) {
+    return (5/9 * (f - 32))
+}
+document.write(FahrenheitParaCelsius(55) + " ºC")
+
+----------------------------------------------------------------------------
+
+Nota do aluno
+
+function resultado(nota) {
+  if (nota >= 7) return "Aprovado";
+  else return "Reprovado";
+}
+console.log(resultado(6.5));
+
+
+➤ Desafio: se a nota for entre 5 e 6.9, retorne “Recuperação”.
+*/ 
+
+function resultado(nota) {
+    if (nota >= 7) 
+        return "Aprovado"
+    if (nota >=5 && nota <= 6.9) 
+        return "Recuperação"
+    else
+        return "Reprovado"
+}
+
+document.write(resultado(3))
 
 
 
