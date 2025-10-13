@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+      
+/*
+        Olá, Mundo com função
+
+function saudacao() {
+  console.log("Olá, Mundo!");
+}
+saudacao();
+
+
+➤ Desafio: transforme para receber o nome como parâmetro e mostrar “Olá, [nome]!”.
+
+
+var nome = prompt("Informe o seu nome: ")
+
+function saudacao(nome) {
+    return 'Olá, ' + nome + '!'
+}
+
+document.write(saudacao(nome))
+
+-------------------------------------------------
+Soma de dois números
+
+function soma(a, b) {
+  return a + b;
+}
+console.log(soma(3, 7));
+
+
+➤ Desafio: crie também subtrair, multiplicar e dividir.
+
+function soma(a, b) {
+    return a + b
+}
+document.write(soma(3,7))
+
+document.write('<br /> <hr />')
+
+function subtrair(a,b) {
+    return a - b
+}
+document.write(subtrair(6,5))
+
+document.write('<br /> <hr />')
+
+function multiplicar(a,b) {
+    return a*b
+}
+document.write(multiplicar(5,5))
+
+document.write('<br /> <hr />')
+
+function dividir(a,b) {
+    return a/b
+}
+document.write(dividir(25,2))
+
+------------------------------------------------------------------------------
+Par ou Ímpar
+
+function parOuImpar(numero) {
+  if (numero % 2 === 0) return "Par";
+  else return "Ímpar";
+}
+console.log(parOuImpar(5));
+
+
+➤ Desafio extra: mostre também se o número é positivo, negativo ou zero.
+
+
+function parOuImpar(numero) {
+    if (numero % 2 === 0) 
+        return "Par"
+    else
+        return "Impar"
+} 
+
+document.write(parOuImpar(33))
+
+document.write('<br /> <hr />')
+
+function positivoNegativo(numero) {
+    if (numero > 0)
+        return "Positivo"
+    if (numero < 0)
+        return "Negativo"
+    else 
+        return "Zero"
+}
+
+document.write(positivoNegativo(10))
+
+----------------------------------------------------------------------------
+
+Dobro de um número
+
+function dobro(n) {
+  return n * 2;
+}
+
+
+➤ Desafio: faça também uma função que retorna o quadrado e outra que retorna a metade.
+
+function retornarQuadrado(n) {
+    return n * n 
+}
+
+document.write(retornarQuadrado(5))
+
+document.write('<br /> <hr />')
+
+function retornarMetade(n) {
+    return n / 2
+}
+
+document.write(retornarMetade(5))
+
+-------------------------------------------------------------------------------
+
+Maior número
+
+function maior(a, b) {
+  if (a > b) return a;
+  else return b;
+}
+console.log(maior(10, 7));
+
+
+➤ Desafio: modifique para comparar três números.
+*/ 
+
+function maior(a, b ,c) {
+    if (a > b && a > c) return a 
+    if (b > a && b > c) return b 
+    else return c 
+}
+
+document.write(maior(10, 11, 9))
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
