@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script>
+
+        function alterarCor(cor, l, a) {
+            document.getElementById('caixa').style.background = cor
+            document.getElementById('caixa').style.height = l
+            document.getElementById('caixa').style.width = a 
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Manipulando Estilo</h1>
+
+    <button class="btn btn-danger m-4" onclick="alterarCor('#FF0000', '100px', '100px')">Vermelho</button>
+    <button class="btn btn-success m-4" onclick="alterarCor('#00FF00', '200px', '200px')">Verde</button>
+    <button class="btn btn-primary m-4" onclick="alterarCor('#0000FF', '300px', '300px')">Azul</button>
+
+    <hr />
+
+    <div id="caixa" class="m-4" style="background: black; height: 150px; width: 150px; "></div>
+</body>
+</html>
