@@ -8,11 +8,11 @@
 
     <script>
 
-        function alterarFoco(corFocus) {
-           document.getElementById('form').style.background = corFocus
+        function alterarFoco() {
+           document.getElementById('form').style.background = '#FFFFCC'
         }
 
-        function tirarFoco(corBlur) {
+        function tirarFoco() {
             //recuperar o valor
             var conteudo = document.getElementById('form').value
 
@@ -32,7 +32,7 @@
 
 <body>
 
-    <input id="form" type="text" onfocus="alterarFoco('#FFFFCC')" onblur="tirarFoco()">
+    <input id="form" type="text" onfocus="alterarFoco()" onblur="tirarFoco()">
 
 </body>
 </html>
