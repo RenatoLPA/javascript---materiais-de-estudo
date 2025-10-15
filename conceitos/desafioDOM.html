@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script>
+
+        function alterarFoco(corFocus) {
+           document.getElementById('form').style.background = corFocus
+        }
+
+        function tirarFoco(corBlur) {
+            //recuperar o valor
+            var conteudo = document.getElementById('form').value
+
+            if (conteudo.length < 3) {
+                document.getElementById('form').style.background = '#FF0000'
+            }
+
+            else {
+                document.getElementById('form').style.background = '#00FF00'
+            }
+            
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <input id="form" type="text" onfocus="alterarFoco('#FFFFCC')" onblur="tirarFoco()">
+
+</body>
+</html>
