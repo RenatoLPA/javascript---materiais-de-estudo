@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+
+        var numeros = Array()
+
+        function botaoAdicionar() {
+
+            var valor = document.getElementById('item').value
+
+            if (valor == '') {
+                alert ('Informe um número válido!')
+            } 
+            if (numeros.indexOf(Number(valor)) != -1) {
+                alert ('Número já adicionado na lista!')
+            } 
+            else {
+                numeros.push(Number(valor))
+                console.log(numeros)
+
+                document.getElementById('item').value = ''
+            }
+        }
+
+        function mostrarMaiorMenor() {
+            alert('Maior: ' + Math.max.apply(null, numeros) + '\nMenor: ' + Math.min.apply(null, numeros))
+        }
+    
+        function limparLista() {
+            numeros = Array()
+            console.log(numeros)
+        }
+
+    </script>
+</head>
+<body>
+
+    <input type="text" id="item">
+    <button onclick="botaoAdicionar()" >Adicionar</button>
+    <button onclick="mostrarMaiorMenor()" >Mostrar maior e menor</button>
+    <button onclick="limparLista()" >Limpar lista</button>
+
+</body>
+</html>
