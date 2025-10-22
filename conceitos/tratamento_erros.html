@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+
+        //netflix
+        var video = Array()
+
+        video[1] = Array()
+        video[1]['nome'] = 'One Piece'
+        video[1]['categoria'] = 'Anime'
+
+        function getVideo(video) {
+            //logica
+
+            try{
+                console.log(video[0]['nome'])
+
+            } catch(erro) {
+                tratarErro(erro)
+                console.log('Ocorreu um erro: ' + erro)
+                throw new Error('O vídeo não foi encontrado!')
+
+            } finally {
+                console.log('Sempre passa por aqui (try / catch)')
+            }
+        }
+
+        function tratarErro(erro) {
+            //logica para registrar erro no servidor
+            console.log(erro)
+        }
+
+        getVideo(video)
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
