@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Javascript -->
+    <script type="text/javascript">
+      
+      function gerarFraseMotivacional() {
+        const frases = [
+          "Você não precisa estar no seu melhor para continuar — só precisa continuar.",
+          "Pequenos passos todos os dias também constroem grandes mudanças.",
+          "O que hoje parece pesado, amanhã pode virar força.",
+          "Você é mais capaz do que a dúvida te faz acreditar.",
+          "Nem tudo precisa dar certo agora para fazer sentido depois.",
+          "Respeite o seu tempo: crescer também é um processo silencioso.",
+          "Mesmo cansado, você ainda está avançando — e isso importa.",
+          "Confie em quem você está se tornando, não só em quem você já foi.",
+          "A coragem não é ausência de medo, é seguir apesar dele.",
+          "Continue: o seu esforço está te levando mais longe do que você imagina."
+        ]
+
+        const numeroAleatorio = Math.floor(Math.random() * 10)
+        const frase = frases[numeroAleatorio]
+
+        document.getElementById('frase').innerHTML = frase
+        }
+        
+    </script>
+
+    <title>Frases motivacionais</title>
+
+  </head>
+
+  <body>
+    
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="jumbotron">
+              <h1 class="text-success display-5">Frases motivacionais</h1>
+              <hr>
+
+              <h2 class="display-4" id="frase">
+                Em busca do ótimo não se faz o bom.
+              </h2>
+
+              <hr>
+              <button type="button" 
+              class="btn btn-success btn-lg" onclick="gerarFraseMotivacional()">Nova frase</button>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+  </body>
+
+</html>
